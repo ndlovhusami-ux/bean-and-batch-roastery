@@ -1,0 +1,8 @@
+[
+{"id":1,"name":"Ethiopia Yirgacheffe","roast":"Light","level":2,"price":185,"origin":"Yirgacheffe, Ethiopia","notes":"Floral and citrus-forward, washed process.","desc":"Washed process, grown at about 1,900m. Best as filter or pour-over."},
+{"id":2,"name":"Kenya Nyeri","roast":"Light","level":2,"price":195,"origin":"Nyeri, Kenya","notes":"Blackcurrant and juicy acidity.","desc":"Bright, berry-driven cup from smallholder cooperatives. Great as filter."},
+{"id":3,"name":"Colombia Huila","roast":"Medium","level":3,"price":170,"origin":"Huila, Colombia","notes":"Caramel and red apple, balanced acidity.","desc":"A balanced all-rounder that works well as filter or espresso."},
+{"id":4,"name":"Brazil Cerrado","roast":"Medium","level":3,"price":160,"origin":"Cerrado Mineiro, Brazil","notes":"Hazelnut and milk chocolate.","desc":"Smooth, sweet and low in acidity. A reliable espresso base."},
+{"id":5,"name":"House Blend","roast":"Dark","level":4,"price":160,"origin":"Brazil and Colombia blend","notes":"Chocolate and roasted nut, low acidity.","desc":"Our everyday espresso blend, built to cut through milk."},
+{"id":6,"name":"Sumatra Mandheling","roast":"Dark","level":5,"price":175,"origin":"North Sumatra, Indonesia","notes":"Earthy, cocoa and spice, full body.","desc":"Wet-hulled and roasted dark for a heavy, syrupy cup."}
+]

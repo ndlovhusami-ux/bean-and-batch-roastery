@@ -1,0 +1,3 @@
+{"product":{"unit":"bag(s) of 250g","price":170,"min":1,"notice":2},
+ "wholesale":{"unit":"kg","price":280,"min":5,"notice":5,"discountOver":20,"discount":0.15},
+ "catering":{"unit":"guest(s)","price":65,"min":20,"notice":7}}

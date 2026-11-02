@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enquire | Bean &amp; Batch Roastery</title>
-  <meta name="description" content="Send a product, wholesale, or catering enquiry to Bean & Batch Roastery.">
+  <title>Wholesale Coffee Supplier &amp; Catering Enquiry | Bean &amp; Batch</title>
+  <meta name="description" content="Enquire about wholesale coffee supply, event catering or beans. Get an instant cost estimate and availability.">
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/bean-and-batch-roastery/enquiry.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wholesale Coffee Supplier &amp; Catering Enquiry | Bean &amp; Batch">
+  <meta property="og:description" content="Enquire about wholesale coffee supply, event catering or beans. Get an instant cost estimate and availability.">
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/bean-and-batch-roastery/enquiry.html">
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/bean-and-batch-roastery/images/hero-coffee-1200.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -39,7 +46,7 @@
 
     <section>
       <div class="container">
-        <form data-confirm novalidate>
+        <form id="enquiry-form" novalidate>
           <fieldset>
             <legend>Enquiry type</legend>
             <div class="form-row">
@@ -56,7 +63,7 @@
 
           <div class="form-row">
             <label for="full-name">Full name <span class="required">*</span></label>
-            <input type="text" id="full-name" name="full-name" required>
+            <input type="text" id="full-name" name="full-name" required minlength="2" maxlength="60" autocomplete="name">
           </div>
 
           <div class="form-row">
@@ -66,7 +73,7 @@
 
           <div class="form-row">
             <label for="phone">Phone number</label>
-            <input type="tel" id="phone" name="phone">
+            <input type="tel" id="phone" name="phone" pattern="(\+27|0)[0-9]{9}" maxlength="14" placeholder="e.g. 0821234567" autocomplete="tel">
           </div>
 
           <div class="form-row">
@@ -75,13 +82,37 @@
           </div>
 
           <div class="form-row">
+            <label for="quantity">Quantity (bags, kg or guests)</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="1000">
+          </div>
+          <div class="form-row">
+            <label for="event-date">Date needed (optional)</label>
+            <input type="date" id="event-date" name="event-date">
+          </div>
+
+          <div class="form-row">
             <label for="message">Your enquiry <span class="required">*</span></label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" name="message" rows="5" required minlength="20" maxlength="500"></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary">Send enquiry</button>
           <p class="form-note" role="status" hidden></p>
         </form>
+      </div>
+    </section>
+    <section class="section-alt">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Before you ask</p><h2>Frequently asked questions</h2></div>
+        <div class="accordion">
+          <h3><button aria-expanded="false" aria-controls="f0" id="fb0">How fast will I get a reply?</button></h3>
+          <div class="panel" id="f0" role="region" aria-labelledby="fb0" hidden><p>We reply within two working days.</p></div>
+          <h3><button aria-expanded="false" aria-controls="f1" id="fb1">What is the minimum wholesale order?</button></h3>
+          <div class="panel" id="f1" role="region" aria-labelledby="fb1" hidden><p>Wholesale starts at 5kg, with a 15% discount from 20kg.</p></div>
+          <h3><button aria-expanded="false" aria-controls="f2" id="fb2">How much notice do you need for catering?</button></h3>
+          <div class="panel" id="f2" role="region" aria-labelledby="fb2" hidden><p>At least seven days, and the minimum is 20 guests.</p></div>
+          <h3><button aria-expanded="false" aria-controls="f3" id="fb3">Do you deliver?</button></h3>
+          <div class="panel" id="f3" role="region" aria-labelledby="fb3" hidden><p>We deliver wholesale orders around Johannesburg and ship retail bags nationwide.</p></div>
+        </div>
       </div>
     </section>
   </main>
@@ -117,6 +148,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/forms.js" defer></script>
 </body>
 </html>

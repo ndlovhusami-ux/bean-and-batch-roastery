@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu &amp; Beans | Bean &amp; Batch Roastery</title>
-  <meta name="description" content="Single-origin beans and café menu from Bean & Batch Roastery.">
+  <title>Single-Origin Coffee Beans &amp; Café Menu | Bean &amp; Batch</title>
+  <meta name="description" content="Browse single-origin coffee beans by roast level, search and sort our range, and see the Bean &amp; Batch café menu and prices.">
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/bean-and-batch-roastery/products.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Single-Origin Coffee Beans &amp; Café Menu | Bean &amp; Batch">
+  <meta property="og:description" content="Browse single-origin coffee beans by roast level, search and sort our range, and see the Bean &amp; Batch café menu and prices.">
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/bean-and-batch-roastery/products.html">
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/bean-and-batch-roastery/images/hero-coffee-1200.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -51,32 +58,14 @@
           <p class="eyebrow">Single origins</p>
           <h2>This month's lineup</h2>
         </div>
-        <div class="grid grid-3">
-          <div class="card">
-            <span class="roast-badge">Light Roast</span>
-            <h3>Ethiopia Yirgacheffe</h3>
-            <div class="roast-meter" aria-hidden="true">
-              <span class="filled"></span><span class="filled"></span><span></span><span></span><span></span>
-            </div>
-            <p>Floral and citrus-forward, washed process. Best as filter or pour-over. R185 / 250g</p>
-          </div>
-          <div class="card">
-            <span class="roast-badge">Medium Roast</span>
-            <h3>Colombia Huila</h3>
-            <div class="roast-meter" aria-hidden="true">
-              <span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span>
-            </div>
-            <p>Caramel and red apple, balanced acidity. Works well as filter or espresso. R170 / 250g</p>
-          </div>
-          <div class="card">
-            <span class="roast-badge">Dark Roast</span>
-            <h3>House Blend</h3>
-            <div class="roast-meter" aria-hidden="true">
-              <span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span>
-            </div>
-            <p>Chocolate and roasted nut, low acidity. Our everyday espresso blend. R160 / 250g</p>
-          </div>
+        <div class="controls">
+          <div><label class="sr" for="q">Search beans</label><input type="search" id="q" placeholder="Search beans, e.g. citrus"></div>
+          <div><label class="sr" for="roast">Roast level</label><select id="roast"><option value="">All roasts</option><option>Light</option><option>Medium</option><option>Dark</option></select></div>
+          <div><label class="sr" for="sort">Sort by</label><select id="sort"><option value="name">Name A–Z</option><option value="price-asc">Price low–high</option><option value="price-desc">Price high–low</option><option value="roast">Roast light–dark</option></select></div>
         </div>
+        <p id="count" role="status" aria-live="polite"></p>
+        <div class="grid grid-3" id="product-grid"></div>
+        <dialog id="product-modal" aria-label="Product details"></dialog>
       </div>
     </section>
 
@@ -151,7 +140,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/products.js" defer></script>
 </body>
 </html>
-

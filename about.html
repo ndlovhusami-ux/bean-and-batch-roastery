@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Bean &amp; Batch Roastery</title>
-  <meta name="description" content="The story, mission, and team behind Bean & Batch Roastery.">
+  <title>Small-Batch Coffee Roastery Story | Bean &amp; Batch</title>
+  <meta name="description" content="Meet the Johannesburg small-batch coffee roastery behind Bean &amp; Batch: our story, mission, direct-trade sourcing and team.">
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/bean-and-batch-roastery/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Small-Batch Coffee Roastery Story | Bean &amp; Batch">
+  <meta property="og:description" content="Meet the Johannesburg small-batch coffee roastery behind Bean &amp; Batch: our story, mission, direct-trade sourcing and team.">
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/bean-and-batch-roastery/about.html">
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/bean-and-batch-roastery/images/hero-coffee-1200.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -74,6 +81,34 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">How we work</p><h2>From farm to cup</h2></div>
+        <div class="tabs">
+          <div role="tablist" aria-label="How we work">
+            <button role="tab" id="t1" aria-controls="p1" aria-selected="true">Roasting</button>
+            <button role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1">Sourcing</button>
+            <button role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1">The café</button>
+          </div>
+          <div role="tabpanel" id="p1" aria-labelledby="t1"><p>We roast in batches of 12kg or less, twice a week, and log every profile so each coffee tastes the same bag after bag.</p></div>
+          <div role="tabpanel" id="p2" aria-labelledby="t2" hidden><p>We buy from importers and growers who share farm, altitude and process details, and pay fair prices for traceable coffee.</p></div>
+          <div role="tabpanel" id="p3" aria-labelledby="t3" hidden><p>Our cafés in Rosebank and Melville pour the same coffee we roast, served by baristas trained in-house.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-alt">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Gallery</p><h2>Inside Bean &amp; Batch</h2></div>
+        <div class="gallery">
+          <a class="g-item" href="images/gallery-espresso-pour.jpg"><img src="images/gallery-espresso-pour.jpg" alt="Espresso shot pouring into a cup at the Bean &amp; Batch bar" loading="lazy" width="800" height="600"></a>
+          <a class="g-item" href="images/gallery-drum-roaster.jpg"><img src="images/gallery-drum-roaster.jpg" alt="Small-batch drum roaster at work in the roastery" loading="lazy" width="800" height="600"></a>
+          <a class="g-item" href="images/gallery-latte-art.jpg"><img src="images/gallery-latte-art.jpg" alt="Flat white with latte art on a wooden counter" loading="lazy" width="800" height="600"></a>
+          <a class="g-item" href="images/gallery-green-beans.jpg"><img src="images/gallery-green-beans.jpg" alt="Sacks of green single-origin coffee beans" loading="lazy" width="800" height="600"></a>
+          <a class="g-item" href="images/gallery-cafe-interior.jpg"><img src="images/gallery-cafe-interior.jpg" alt="Customers seated inside the Rosebank café" loading="lazy" width="800" height="600"></a>
+          <a class="g-item" href="images/gallery-bagged-beans.jpg"><img src="images/gallery-bagged-beans.jpg" alt="Bags of freshly roasted beans ready for sale" loading="lazy" width="800" height="600"></a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -107,6 +142,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/gallery.js" defer></script>
 </body>
 </html>
